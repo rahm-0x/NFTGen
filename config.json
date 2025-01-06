@@ -2,38 +2,94 @@
   "layers": [
     {
       "name": "Background",
-      "values": ["Blue", "Orange", "Purple", "Red", "Yellow"],
+      "values": ["Gray", "Blue", "Yellow", "Green", "Aquamarine", "Pink", "Purple", "Orange", "Red"],
       "trait_path": "./trait-layers/backgrounds",
-      "filename": ["blue", "orange", "purple", "red", "yellow"],
-      "weights": [20.0,20.0,20.0,20.0,20.0]
+      "filename": ["gray", "blue", "yellow", "green", "aquamarine", "pink", "purple", "orange", "red"],
+      "weights": [12, 12, 12, 12, 12, 12, 10, 10, 8]
     },
     {
-      "name": "Foreground",
-      "values": ["Python Logo", "Python Logo 2", "Python Logo 3", "Python Logo 4", "Python Logo 5"],
-      "trait_path": "./trait-layers/foreground",
-      "filename": ["logo", "logo", "logo", "logo", "logo"],
-      "weights": [20,20,20,20,20]
+      "name": "Fur",
+      "values": ["Black", "Blue", "Brown", "Cream", "Dark Brown", "Droid", "Gold", "Golden Brown", "Pink", "Platinum", "Red", "Skeleton", "Solana", "Tan", "White", "Zombie"],
+      "trait_path": "./trait-layers/fur",
+      "filename": ["black", "blue", "brown", "cream", "dark_brown", "droid", "gold", "golden_brown", "pink", "platinum", "red", "skeleton", "solana", "tan", "white", "zombie"],
+      "weights": [9, 8, 8, 7, 7, 6, 6, 6, 6, 6, 5, 5, 4, 5, 5, 7]
     },
     {
-      "name": "Branding",
-      "values": ["A Name", "Another Name"],
-      "trait_path": "./trait-layers/text",
-      "filename": ["text", "text"],
-      "weights": [50, 50]
-    }
-  ],
-  "incompatibilities": [
+      "name": "Eyes",
+      "values": ["Bloodshot", "Blue Beams", "Bored", "Brute", "Closed", "Crazy", "Curious", "Cyborg", "Golden Hour", "Hypnotized", "Laser", "Locked In", "Matrix", "Raijin", "Sad", "Scar", "Sharp", "Shook", "Twitch", "X"],
+      "trait_path": "./trait-layers/eyes",
+      "filename": ["bloodshot", "blue_beams", "bored", "brute", "closed", "crazy", "curious", "cyborg", "golden_hour", "hypnotized", "laser", "locked_in", "matrix", "raijin", "sad", "scar", "sharp", "shook", "twitch", "x"],
+      "weights": [7, 5, 8, 5, 8, 8, 7, 4, 5, 5, 4, 4, 3, 3, 4, 5, 3, 3, 5, 4]
+    },
     {
-      "layer": "Background",
-      "value": "Blue",
-      "incompatible_with": ["Python Logo 2"],
-      "default": {
-        "value": "Default Incompatibility",
-        "filename": "./trait-layers/foreground/logo"
-      }
+      "name": "Glasses",
+      "values": ["3D", "Abyss", "Bankroll", "Blackout", "Crimson", "Echelon", "Elitist", "Enforcer", "Enigma", "Frostfire", "Grifter", "Holographic", "Icebreaker", "Iconic", "Mogul", "Old Money", "Sleek", "Solstice", "Specter", "Stryker", "Tycoon", "Vibe Visor", "Wiseguy"],
+      "trait_path": "./trait-layers/glasses",
+      "filename": ["3d", "abyss", "bankroll", "blackout", "crimson", "echelon", "elitist", "enforcer", "enigma", "frostfire", "grifter", "holographic", "icebreaker", "iconic", "mogul", "old_money", "sleek", "solstice", "specter", "stryker", "tycoon", "vibe_visor", "wiseguy"],
+      "weights": [8, 8, 7, 7, 7, 6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 2, 2, 1, 4]
+    },
+    {
+      "name": "Mouth",
+      "values": ["Bored", "Bored Unshaved", "Brute", "Burnt Jewel", "Burnt Jewel Unshaved", "Champagne", "Champagne Unshaved", "Drool", "Flawless", "Flawless Unshaved", "Gold Rush", "Grin", "Grin Unshaved", "Growler", "Hollywood", "Iridescent", "Iridescent Unshaved", "Jawbreaker", "Picky", "Picky Unshaved", "Slick", "Slick Unshaved", "Smirk", "Stogie", "Warden", "Warden Unshaved"],
+      "trait_path": "./trait-layers/mouth",
+      "filename": ["bored", "bored_unshaved", "brute", "burnt_jewel", "burnt_jewel_unshaved", "champagne", "champagne_unshaved", "drool", "flawless", "flawless_unshaved", "gold_rush", "grin", "grin_unshaved", "growler", "hollywood", "iridescent", "iridescent_unshaved", "jawbreaker", "picky", "picky_unshaved", "slick", "slick_unshaved", "smirk", "stogie", "warden", "warden_unshaved"],
+      "weights": [6, 5, 5, 6, 4, 4, 3, 5, 4, 5, 4, 5, 4, 4, 3, 3, 3, 4, 4, 4, 2, 3, 4, 1, 4, 1]
+    },
+    {
+      "name": "Headgear",
+      "values": ["Black Highlife Club", "Black MMC Rally", "Buster", "Collector", "Cruise Control", "Deadshot", "Harbinger", "Heir", "Horns", "Nightshade", "Ocean Master", "Quickdraw", "Saint", "Snowline", "The Highlife", "Vibe Check", "Whisperer", "White Highlife Club", "White MMC Rally", "Wraith"],
+      "trait_path": "./trait-layers/headgear",
+      "filename": ["black_highlife_club", "black_mmc_rally", "buster", "collector", "cruise_control", "deadshot", "harbinger", "heir", "horns", "nightshade", "ocean_master", "quickdraw", "saint", "snowline", "the_highlife", "vibe_check", "whisperer", "white_highlife_club", "white_mmc_rally", "wraith"],
+      "weights": [8, 8, 8, 8, 6, 6, 6, 5, 5, 5, 5, 5, 4, 3, 3, 3, 3, 2, 2, 5]
+    },
+    {
+      "name": "Shirt",
+      "values": [
+        "Ace Jacket", "Advisor Suit", "Aspen Jacket", "Blackout Fur Jacket", "Blush Tux", "Brandy Suit", "Bravado Suit",
+        "Brawler Jacket", "Capisce Shirt", "Cardinal Suit", "CEO Suit", "Champagne Suit", "Chillax Jacket", "Clover Track",
+        "Commando Suit", "Crimsonite Shirt", "Dapper Shirt", "Divine Suit", "Eagle Suit", "Echelon Suit", "Empire Suit",
+        "Enforcer Jacket", "Enforcer Mink", "Fleur Shirt", "Frostbite Coat", "Glacius Shirt", "Greenside Shirt",
+        "Handler Jacket", "Hustler Jacket", "Icon Tux", "Insider Jacket", "Lavish Shirt", "Luminary Shirt", "Lux Tux",
+        "Luxuria Shirt", "Mastermind Fur Suit", "Mirage Jacket", "Mogul Suit", "Monarch Suit", "Mulligan Shirt",
+        "Nightfall Shirt", "Noir Shirt", "Oasis Shirt", "Obsidian Suit", "Onyx Turtleneck", "Overseer Suit",
+        "Peacemaker Shirt", "Phantom Track", "Philanthropist Suit", "Pinnacle Suit", "Pristine Suit", "Prodigy Suit",
+        "Prowler Suit", "Riptide Suit", "Risky Business Suit", "Rogue Suit", "Sapphire Suit", "Scarlet Suit",
+        "Scholar Shirt", "Sentinel Suit", "Serpent Suit", "Shakedown Suit", "Shroud Shirt", "Silencer Jacket",
+        "Skyline Track", "Soldato Suit", "Spectre Jacket", "Strategist Shirt", "Stryker Suit", "Syndicate Fur Coat",
+        "Talisman Suit", "Teeoff Shirt", "Thinker Shirt", "Trigger Jacket", "Tycoon Suit", "Tyrant Suit", "Vanguard Suit",
+        "Velora Suit", "Ventures Suit", "Virgil Jacket", "Visionary Jacket", "Vogue Tux", "Waves Shirt",
+        "Wildcat Fur Coat", "Wildcat Jacket", "Wiseguy Suit"
+      ],
+      "trait_path": "./trait-layers/shirt",
+      "filename": [
+        "ace_jacket", "advisor_suit", "aspen_jacket", "blackout_fur_jacket", "blush_tux", "brandy_suit", "bravado_suit",
+        "brawler_jacket", "capisce_shirt", "cardinal_suit", "ceo_suit", "champagne_suit", "chillax_jacket", "clover_track",
+        "commando_suit", "crimsonite_shirt", "dapper_shirt", "divine_suit", "eagle_suit", "echelon_suit", "empire_suit",
+        "enforcer_jacket", "enforcer_mink", "fleur_shirt", "frostbite_coat", "glacius_shirt", "greenside_shirt",
+        "handler_jacket", "hustler_jacket", "icon_tux", "insider_jacket", "lavish_shirt", "luminary_shirt", "lux_tux",
+        "luxuria_shirt", "mastermind_fur_suit", "mirage_jacket", "mogul_suit", "monarch_suit", "mulligan_shirt",
+        "nightfall_shirt", "noir_shirt", "oasis_shirt", "obsidian_suit", "onyx_turtleneck", "overseer_suit",
+        "peacemaker_shirt", "phantom_track", "philanthropist_suit", "pinnacle_suit", "pristine_suit", "prodigy_suit",
+        "prowler_suit", "riptide_suit", "risky_business_suit", "rogue_suit", "sapphire_suit", "scarlet_suit",
+        "scholar_shirt", "sentinel_suit", "serpent_suit", "shakedown_suit", "shroud_shirt", "silencer_jacket",
+        "skyline_track", "soldato_suit", "spectre_jacket", "strategist_shirt", "stryker_suit", "syndicate_fur_coat",
+        "talisman_suit", "teeoff_shirt", "thinker_shirt", "trigger_jacket", "tycoon_suit", "tyrant_suit", "vanguard_suit",
+        "velora_suit", "ventures_suit", "virgil_jacket", "visionary_jacket", "vogue_tux", "waves_shirt",
+        "wildcat_fur_coat", "wildcat_jacket", "wiseguy_suit"
+      ],
+      "weights": [
+        1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16,
+        1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16,
+        1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16,
+        1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16,
+        1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16,
+        1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16, 1.16,
+        1.16, 1.40
+      ]
     }
   ],
+  "incompatibilities": [],
   "baseURI": ".",
-  "name": "NFT #",
-  "description": "This is a description for this NFT series."
+  "name": "Mafia Monkes",
+  "description": "Mafia Monkes is the elite PFP collection on Solana, offering exclusive real-world perks."
 }

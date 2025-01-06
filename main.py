@@ -1,24 +1,23 @@
 import argparse
-
 from src.core.config import generate_config
 from src.core.main import Generator
 from src.core.metadata import update_metadata
 
-# add CLI arguments
+# Add CLI arguments
 generator = argparse.ArgumentParser(
     prog="generate", usage="main.py <command> [options]"
 )
 
-# add subcommands
+# Add subcommands
 generator.add_argument(
     "command",
     choices=["generate", "validate", "update_metadata", "build_config"],
     help="Command to execute",
 )
 
-# add arguments
-generator.add_argument("-n", "--amount", help="Amount to generate")
-generator.add_argument("-c", "--config", help="Path to configuration file")
+# Add arguments
+generator.add_argument("-n", "--amount", help="Amount to generate", type=int)
+generator.add_argument("-c", "--config", help="Path to configuration file", required=True)
 generator.add_argument(
     "-o", "--output", help="Path to output, either a folder or file", default="./output"
 )
@@ -33,6 +32,7 @@ generator.add_argument(
 generator.add_argument(
     "--start-at",
     help="Token ID to start with",
+    type=int,
     default=0,
 )
 generator.add_argument(
@@ -40,7 +40,7 @@ generator.add_argument(
 )
 generator.add_argument("--trait-dir", help="Path to the trait directory")
 
-# add flags
+# Add flags
 generator.add_argument(
     "--no-pad",
     help="Disable zero-padding on token ID",
@@ -54,9 +54,8 @@ generator.add_argument(
     default=False,
 )
 
-# parse and validate arguments
+# Parse and validate arguments
 args = vars(generator.parse_args())
-
 
 if args["command"] == "validate":
     generator: Generator = Generator(**args)
